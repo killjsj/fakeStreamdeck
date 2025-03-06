@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kill\\Documents\\2dtest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B23C5E07-E178-420A-885E-D57F59F16CF0}|2dtest.csproj|c:\\users\\kill\\documents\\2dtest\\serial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B23C5E07-E178-420A-885E-D57F59F16CF0}|2dtest.csproj|solutionrelative:serial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Serial.cs",
+              "DocumentMoniker": "C:\\Users\\kill\\Documents\\2dtest\\Serial.cs",
+              "RelativeDocumentMoniker": "Serial.cs",
+              "ToolTip": "C:\\Users\\kill\\Documents\\2dtest\\Serial.cs",
+              "RelativeToolTip": "Serial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T14:10:48.386Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

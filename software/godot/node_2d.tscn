@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=3 uid="uid://bgai1j8wpe3mj"]
+
+[ext_resource type="Script" path="res://Serial.cs" id="1_5of2a"]
+[ext_resource type="Texture2D" uid="uid://c8qmvfbmniqqe" path="res://3D_1-PCB_PCB_New1_2_2024-07-23.png" id="1_nmio5"]
+[ext_resource type="Script" path="res://1.gd" id="3_os8r7"]
+[ext_resource type="Script" path="res://2.gd" id="5_ht15u"]
+[ext_resource type="Script" path="res://3.gd" id="6_pcniu"]
+[ext_resource type="Script" path="res://Button.gd" id="7_7dava"]
+[ext_resource type="Script" path="res://4.gd" id="7_bt8ef"]
+[ext_resource type="Script" path="res://node_2d.gd" id="9_lok0w"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_5of2a")
+
+[node name="3d1-pcbPcbNew122024-07-23" type="Sprite2D" parent="."]
+position = Vector2(260, 283)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("1_nmio5")
+metadata/_edit_lock_ = true
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 133.0
+offset_top = 335.0
+offset_right = 196.0
+offset_bottom = 358.0
+text = "
+"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 23.0
+offset_top = 328.0
+offset_right = 86.0
+offset_bottom = 351.0
+text = "
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 77.0
+offset_top = 268.0
+offset_right = 140.0
+offset_bottom = 291.0
+text = "
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 6.0
+offset_right = 227.0
+offset_bottom = 29.0
+text = "ESP32_Streamdeck Control"
+
+[node name="1" type="Node" parent="."]
+script = ExtResource("3_os8r7")
+
+[node name="button1" type="TextureButton" parent="1"]
+offset_left = 259.0
+offset_top = 83.0
+offset_right = 299.0
+offset_bottom = 153.0
+toggle_mode = true
+action_mode = 0
+button_mask = 3
+script = ExtResource("3_os8r7")
+
+[node name="button2" type="TextureButton" parent="1"]
+offset_left = 315.0
+offset_top = 79.0
+offset_right = 355.0
+offset_bottom = 149.0
+toggle_mode = true
+action_mode = 0
+button_mask = 3
+script = ExtResource("5_ht15u")
+
+[node name="button3" type="TextureButton" parent="1"]
+offset_left = 368.0
+offset_top = 82.0
+offset_right = 413.0
+offset_bottom = 152.0
+toggle_mode = true
+action_mode = 0
+button_mask = 3
+script = ExtResource("6_pcniu")
+
+[node name="button4" type="TextureButton" parent="1"]
+offset_left = 418.0
+offset_top = 83.0
+offset_right = 463.0
+offset_bottom = 153.0
+toggle_mode = true
+action_mode = 0
+button_mask = 3
+script = ExtResource("7_bt8ef")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1232.0
+offset_top = 175.0
+offset_right = 1300.0
+offset_bottom = 206.0
+button_mask = 7
+text = "reset"
+script = ExtResource("7_7dava")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("9_lok0w")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="ColorPicker" type="ColorPicker" parent="."]
+offset_left = 741.0
+offset_top = 20.0
+offset_right = 1039.0
+offset_bottom = 596.0
+
+[connection signal="data_received" from="." to="Node2D" method="_on_node_2d_data_received"]
+[connection signal="button_down" from="1/button1" to="1" method="_on_button_1_button_down"]
+[connection signal="catch" from="1/button1" to="." method="_on_node_2d_catch"]
+[connection signal="pressed" from="1/button1" to="1" method="_on_button_1_pressed"]
+[connection signal="pressed" from="1/button2" to="1" method="_on_button_2_pressed"]
+[connection signal="pressed" from="1/button3" to="1" method="_on_button_3_pressed"]
+[connection signal="pressed" from="1/button4" to="1" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_node_2d_catch"]
+[connection signal="catch" from="Node2D" to="." method="_on_node_2d_catch"]

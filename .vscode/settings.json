@@ -1,0 +1,27 @@
+{
+	"arduino.path": "C:\\Users\\kill\\AppData\\Local\\Programs\\arduino-ide",	//注意，这里填入你自己Arduino安装路径，也就是前面配置的Path路径
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "editor.insertSpaces": true,
+    "files.autoGuessEncoding": true,
+    "arduino.logLevel": "verbose",
+    "explorer.confirmDelete": false,
+    "editor.detectIndentation": false,
+    "arduino.additionalUrls": [
+        "C:\\Users\\kill\\AppData\\Local\\Arduino15\\packages,C:\\Users\\kill\\Documents\\Arduino\\libraries"
+    ],
+    "files.associations": {
+        "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "*.tcc": "cpp",
+        "random": "cpp"
+    },
+}
+
